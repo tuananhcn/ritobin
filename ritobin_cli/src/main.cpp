@@ -10,7 +10,7 @@
 #include <io.h>
 static void set_binary_mode(FILE* file) {
     if (_setmode(_fileno(file), O_BINARY) == -1) {
-        throw std::runtime_error("Can not change mode to binary!");
+        throw std::runtime_error("Can not change mode to binary!!");
     }
 }
 #else
